@@ -1,0 +1,96 @@
+.header{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    
+}
+.header__container{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+}
+.header__logo > img{
+    height: 40px;
+    cursor: pointer;
+}
+.header__search{
+    display: flex;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding: 0 10px;
+    border-radius: 7px;
+    height: 37px;
+    margin-top: 3px;
+    
+}
+.search__icon{
+    cursor: pointer;
+    color: gray;
+}
+.header__search > input{
+    border:none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    width:230px;
+    min-width: none;
+}
+@media(max-width:630px){
+    .header__search{
+        display: none;
+    }
+}
+.header__icons{
+    display: flex;
+    align-items: center;
+}
+
+.header__icon{
+    margin: 0 8px;
+    cursor: pointer;
+}
+.header__avatar{
+    height:30px !important;
+    width: 30px !important;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.header__authentication{
+    display: flex;
+    align-items: center;
+
+}
+
+.signup__button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: #0095F6;
+    margin: 10px;
+}
+
+.login__button{
+    border: none;
+    padding: 6px 10px;
+    font-weight: 700;
+    color: white;
+    background-color: #0095F6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout__button{
+    border: none;
+    background-color: #0095F6;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 20px;
+}

@@ -1,0 +1,10 @@
+.postinput{
+    display: flex;
+    background-color: white;
+    width: 380px;
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}

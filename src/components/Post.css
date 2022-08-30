@@ -1,0 +1,116 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+    margin: auto ;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.post__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postHeader__rightIcon{
+    margin: 10px;
+    cursor: pointer;
+}
+.postHeader__left{
+    display: flex;
+    align-items: center;
+}
+.postHeader__left > strong{
+    cursor: pointer;
+}
+.post__avatar{
+    cursor: pointer;
+    height: 30px !important;
+    width: 30px !important;
+    margin: 10px;
+
+}
+.post__body{
+    width: 440px;
+
+}
+.post__body > img{
+    /* height: 100%; */
+    object-fit: cover;
+    width: 100%;
+    min-height: 390px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    max-height: 560px;
+
+}
+
+.post__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postFooter__Icon{
+    margin: 10px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.postFooter__Icon:hover{
+    color: gray;
+}
+
+.post > strong{
+    margin:  0 10px;
+    cursor: pointer;
+}
+
+.post__details{
+    margin-top: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.post__details> span{
+    margin: 10px;
+}
+
+.post__details> span > strong{
+    cursor: pointer;
+}
+
+.post__comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.postContent__left{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.postContent__icon{
+    cursor: pointer;
+    margin-right: 10px;
+    color: #262626;
+}
+
+.postContent__left > input{
+    border:none;
+    outline: none;
+    width: 100%;
+}
+
+.postComment__right > strong{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #0095F6;
+}
