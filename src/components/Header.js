@@ -57,7 +57,7 @@ function Header() {
                <SendIcon className='header__icon' />
                <AddCircleOutlineIcon className='header__icon' />
                <FavoriteBorderIcon className='header__icon'/>
-               <Avatar  className='header__avatar' src=""/>
+               <Avatar  className='header__avatar' src="https://scontent.fdbd1-1.fna.fbcdn.net/v/t31.18172-8/14939567_695162700641423_6074991822732935176_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4NlT178g9qkAX_8JUQ5&tn=5eJ5NDFK_jWXc_Kp&_nc_ht=scontent.fdbd1-1.fna&oh=00_AT9dhht8kcMHxP1anaHuXfNpVhG2hSpW5Lm9SJyrHhsWJw&oe=63309DC6"/>
                <button onClick={handleSignout} className='logout__button'>Log out</button>
               </div>) : (<div className='header__authentication'>
                            

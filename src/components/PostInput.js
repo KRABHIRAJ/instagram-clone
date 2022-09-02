@@ -13,6 +13,7 @@ function PostInput({user}) {
     const [imagefile, setImageFile] = useState(null);
     const [imageUrl, setImageUrl] = useState("");
     const storage = getStorage();
+    const email = user.email;
     const handleFileChange = (e) => {
         if (e.target.files[0]) {
             setImageFile(e.target.files[0]);
@@ -20,7 +21,7 @@ function PostInput({user}) {
     }
 
    console.log('====================================');
-   console.log("user in postinput" , user);
+   console.log("user in postinput" , user.email);
    console.log('====================================');
 
     const sendPost = (e) => {
@@ -34,7 +35,7 @@ function PostInput({user}) {
                         setImageUrl(url);
                         const postref = collection(db, "posts"); 
                         addDoc(postref, {
-                            // username:{},
+                            username:{email},
                             postImg: url,
                             caption: { caption },
                             timestamp: serverTimestamp(),
